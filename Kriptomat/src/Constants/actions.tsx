@@ -1,0 +1,4 @@
+export default {
+    GET_ALL_COINS: 'GET_ALL_COINS',
+    LOAD_CURRENT_COIN: 'LOAD_CURRENT_COIN',
+};
