@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Home, SingleCurr } from '../Pages/index';
+import { Home, Login, SingleCurr } from '../Pages/index';
 import ROUTES from '../Constants/routes';
 import Logo from '../Components/Logo';
 
@@ -10,7 +10,13 @@ const Stack = createStackNavigator();
 
 function MyStack() {
     return (
-        <Stack.Navigator initialRouteName={ROUTES.HOME}>
+        <Stack.Navigator initialRouteName={ROUTES.LOGIN}>
+            <Stack.Screen
+                name={ROUTES.LOGIN}
+                component={Login}
+                options={{ headerTitle: Logo, headerStyle: { height: 130 } }}
+            />
+
             <Stack.Screen
                 name={ROUTES.HOME}
                 component={Home}

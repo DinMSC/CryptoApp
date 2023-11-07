@@ -28,6 +28,10 @@ const Styles = StyleSheet.create({
         height: 50,
         borderRadius: 25,
     },
+    textInputAuth: {
+        backgroundColor: 'white',
+        width: width,
+    },
     coinName: {
         fontSize: 17,
         marginLeft: 10,

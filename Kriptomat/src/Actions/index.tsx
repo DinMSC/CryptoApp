@@ -33,8 +33,6 @@ export const sortCoinsByName: any =
 
 export const sortByPriceChange: any =
     (coins: any) => async (dispatch: Dispatch) => {
-        console.log('djwjwdjdadwadwj');
-
         const data = await coins.sort(
             (a: any, b: any) =>
                 parseFloat(a.price_change_percentage_24h) -
