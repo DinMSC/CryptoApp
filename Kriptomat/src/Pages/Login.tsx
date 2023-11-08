@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { Button, Text, TextInput } from 'react-native-paper';
 import BuySellbutton from '../Components/BuySellbutton';
+import GoogleButton from '../Components/GoogleButton';
 import style from '../Components/Styles/index';
 
 const Login: any = () => {
@@ -25,10 +26,6 @@ const Login: any = () => {
         >
             <View>
                 <View style={{ marginTop: 55 }}>
-                    <Text style={{ paddingBottom: 30, paddingLeft: 10 }}>
-                        Login to your account!{' '}
-                    </Text>
-
                     <TextInput
                         label='Email'
                         value={formik.values.email}
@@ -50,7 +47,26 @@ const Login: any = () => {
                         selectionColor='#1e88e5'
                         style={{ backgroundColor: 'white' }}
                     />
+                    <View
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            justifyContent: 'flex-end',
+                        }}
+                    >
+                        <Text
+                            style={{
+                                paddingTop: 10,
+                                paddingRight: 15,
+                                fontSize: 14,
+                                color: '#1e88e5',
+                            }}
+                        >
+                            Forgot Password ?
+                        </Text>
+                    </View>
                 </View>
+
                 <View
                     style={{
                         marginTop: 30,
@@ -69,6 +85,7 @@ const Login: any = () => {
                         Login
                     </Button>
                 </View>
+                <GoogleButton />
             </View>
 
             <View style={style.footer}>
